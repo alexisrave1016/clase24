@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container_total{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    background-color: rgb(173, 214, 201);
+}
+li{
+    margin: auto;
+}
+
+#logo{
+    height: 100px;
+    width: auto;
+}
