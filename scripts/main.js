@@ -1,6 +1,13 @@
 const items = document.getElementById('items')
 const templateCard = document.getElementById('template_card').content
 const fragment = document.createDocumentFragment()
+const ellos= document.getElementById('hombres')
+const ellas= document.getElementById('mujeres')
+const container= document.getElementById('contenedor')
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', ()=> {
     fetchData()
@@ -42,10 +49,17 @@ let items2 = items.children;
 console.log(items2)
 
 function filtrarPorGen(obj) {
-    if (obj.genero  === 'masculino') {
+    if (obj.genero  === 'masculino' || 'femenino') {
       return true;
     } else {
       //entradasInvalidas++;
       return false;
     }
   }
+
+  ellos.addEventListener('click',()=>{
+
+    container.innerHTML= ''
+
+  // container.innerHTML=;
+})
