@@ -7,23 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprint</title>
     <link rel="stylesheet" href="/styles/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 </head>
 
 <body>
     <div class="container_total">
         <header>
-            <img id="logo" src="https://i.pinimg.com/originals/72/8f/17/728f177c3f194df007bf1adff15ba9b9.png" alt="No Disponible">
-           
-                <li id="inicio">inicio</li>
-                <li id="hombre">Ellos</li>
-                <li id="mujeres">Ellas</li>
-          
+            <img id="logo" src="https://i.pinimg.com/originals/72/8f/17/728f177c3f194df007bf1adff15ba9b9.png"
+                alt="No Disponible">
+
+            <li id="inicio">inicio</li>
+            <li id="hombre">Ellos</li>
+            <li id="mujeres">Ellas</li>
+
         </header>
         <div class="container">
-            <div class="card">
+            <div id="productos_varios">
+                <div class="row" id="items"></div>
 
+                <template id="template_card">
+                    <div class="col-12 mb-2 col-md-2">
+                        <div class="card">
+                            <img src="" alt="" class="card-img-top" id="img">
+                            <div class="card-body" id="cardbody">
+                                <h5>titulo</h5>
+                                <p id="precio">precio</p>
+                                <p id="talla">Tallas</p>
+                                <p id="caracteristicas">Nombre</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </template>
             </div>
         </div>
+    </div>
     </div>
 </body>
 <script src="/scripts/main.js"></script>
